@@ -61,7 +61,7 @@
         }
 
         function style_water_quality_1_0(feature) {
-            switch(String(feature.properties['source'])) {
+            switch(String(feature.properties['id'])) {
                 case 'borehole':
                     return {
                 pane: 'pane_water_quality_1',
