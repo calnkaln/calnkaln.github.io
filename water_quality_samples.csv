@@ -1,0 +1,13 @@
+Sample ID,Sampling date,Location ID,Sample description,Sample type,Latitude,Longitude,Advice,Description,Problem
+KPS_Oct2019,28.10.2019,KPS,Karakata Primary School2,Borehole,27.673904,85.296780,Boil the water,1000 CFU, High Fecael Coliform
+MPS_Oct2019,28.10.2019,MPS,Mogo Primary School,Borehole,27.673904,85.296780,Use BSF,Cause cancer,High Arsenic
+UNB_Oct2019,28.10.2019,UNB,Uwanja w Ndege,Borehole,27.674173,85.297901,Boil the water,1000 CFU, High Fecael Coliform
+KPB_Oct2019,28.10.2019,KPB,Kapilima,Borehole,27.673718,85.294829,Use BSF,Cause cancer,High Arsenic
+N0_Oct2019,28.10.2019,N0,N0,Shallow well,27.683564,85.306661,Boil the water,1000 CFU, High Fecael Coliform
+N11_Oct2019,28.10.2019,N11,N11,Piezometer,27.743040,85.321844,Use BSF,Cause cancer,High Arsenic
+N12_Oct2019,28.10.2019,N12,N12,Piezometer,27.728475,85.295282,Boil the water,1000 CFU, High Fecael Coliform
+N13_Oct2019,28.10.2019,N13,N13,Piezometer,27.728501,85.295739,Use BSF,Cause cancer,High Arsenic
+MLSW_Oct2019,28.10.2019,MLSW,Mama Lucy Shallow well,Shallow well,27.597466,85.384897,Boil the water,1000 CFU, High Fecael Coliform
+N0_Filtered_Oct2019,28.10.2019,N0_Filtered,N0 filtered with ceramics old,Point of use treated,27.597315,85.384829,Use BSF,Cause cancer,High Arsenic
+N0_Filtered_Oct2019,28.10.2019,N0_Filtered,N0 filtered with ceramics new,Point of use treated,27.673638,85.325350,Boil the water,1000 CFU, High Fecael Coliform
+Rainwater_Oct2019,28.10.2019,Rainwater,Rainwater collected from roof and stored in bucket,Rainwater,27.664901,85.308355,Use BSF,Cause cancer,High Arsenic
