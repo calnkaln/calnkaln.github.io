@@ -11,10 +11,15 @@ output = template_start
 with open(csv_path, 'r') as csv_file_obj:
     csv_reader = csv.reader(csv_file_obj)
     csv_contents = [row for row in csv_reader]
+
+lats, lons = [], []
+
 for enum, row in enumerate(csv_contents):
     if enum == 0:
         continue
     name, lon, lat = row[3], row[6], row[5]
+    lats.append(lat)
+    lons.append(lon)
     print(name)
     date = row[1]
     source = row[4]
@@ -32,7 +37,18 @@ for enum, row in enumerate(csv_contents):
     else:
         output = output + ',' + feature
 
+maxLat, maxLon = max(lats), max(lons)
+minLat, minLon = min(lats), min(lons)
+
 output = output + template_end
 
 with open(output_path, "w") as of:
     of.write(output)
+
+with open('webmap/index.html', 'r') as file:
+    # read a list of lines into data
+    webmap_index = file.read().splitlines()
+webmap_index[31] = "        }}).fitBounds([[{},{}],[{},{}]]);".format(minLat, minLon, maxLat, maxLon)
+
+with open('webmap/index.html', 'w', newline='\n') as file:
+    file.writelines((s + '\n' for s in webmap_index))
