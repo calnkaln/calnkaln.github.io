@@ -49,6 +49,6 @@ with open('webmap/index.html', 'r') as file:
     # read a list of lines into data
     webmap_index = file.read().splitlines()
 webmap_index[31] = "        }}).fitBounds([[{},{}],[{},{}]]);".format(minLat, minLon, maxLat, maxLon)
-
+print(minLat, minLon, maxLat, maxLon)
 with open('webmap/index.html', 'w', newline='\n') as file:
     file.writelines((s + '\n' for s in webmap_index))
